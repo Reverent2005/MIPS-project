@@ -58,7 +58,7 @@ registers = [reg_zero, reg_at, reg_v0, reg_v1, reg_a0, reg_a1, reg_a2, reg_a3, r
 
 memory = {}
 address = 4194304
-with open('./comp_arch_assign2/dumped/armstrong_text_machine','r') as file:
+with open('./dumped/armstrong_text_machine','r') as file:
     for line in file:
         memory[address] = line[0:8]
         memory[address+1] = line[8:16]
@@ -68,7 +68,7 @@ with open('./comp_arch_assign2/dumped/armstrong_text_machine','r') as file:
 
 address = 268500992
 
-with open('./comp_arch_assign2/dumped/armstrong_data_machine','r') as file:
+with open('./dumped/armstrong_data_machine','r') as file:
     for line in file:
         memory[address] = line[0:8]
         memory[address+1] = line[8:16]
